@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sai's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-content">
+      <div class="logo">SA</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="greeting">Hi, I'm</span>
+        <span class="name">Sai Anoop Avunuri</span>
+        <span class="role">Backend & Machine Learning Engineer</span>
+        <p class="tagline">Passionate about building scalable and efficient applications</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="button primary">Get in Touch</a>
+          <a href="#projects" class="button secondary">View My Work</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Add your professional photo here -->
+         <img src="main_pic.jpg">
+        <div class="image-placeholder"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>I am a highly motivated and detail-oriented individual with a strong foundation in Computer Science and Machine Learning. I graduated from Georgia Tech with a Bachelor's and Master's in Computer Science. My journey in tech is fueled by a passion for building impactful solutions, whether it's developing end-to-end services, crafting efficient algorithms, or creating seamless user experiences. 
+        </p>
+        <p>When I'm not coding, you can find me playing basketball, watching thriller shows, and working out. I'm always eager to learn new technologies and solve challenging problems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills & Technologies</h2>
+    <div class="skills-group">
+      <h3>Programming Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-python"></i><h4>Python</h4></div>
+        <div class="skill-card"><img src="rust.png" alt="Rust" class="icon-img"/><h4>Rust</h4></div>
+        <div class="skill-card"><i class="fas fa-database"></i><h4>SQL</h4></div>
+      </div>
+    </div>
+    <div class="skills-group">
+      <h3>Machine Learning & Data</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="pytorch.png" alt="PyTorch" class="icon-img"/><h4>PyTorch</h4></div>
+        <div class="skill-card"><img src="pandas.png" alt="Pandas" class="icon-img"/><h4>Pandas</h4></div>
+        <div class="skill-card"><img src="langchain.png" alt="Langchain" class="icon-img"/><h4>Langchain</h4></div>
+      </div>
+    </div>
+    <div class="skills-group">
+      <h3>Backend & Cloud</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="django.svg" alt="Django" class="icon-img"/><h4>Django</h4></div>
+        <div class="skill-card"><i class="fab fa-docker"></i><h4>Docker</h4></div>
+        <div class="skill-card"><i class="fab fa-aws"></i><h4>AWS</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image"><img src='protein.png'></div>
+        <h3>ProteinAI</h3>
+        <p>Developed an ML model that can identify protein-protein interactions. Leveraged ESM2 embeddings and AlphaFold structure predictions to train a downstream neural network.</p>
+        <div class="project-links">
+          <a href="https://github.com/SynesisAI/ProteinAI-Archived" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://proteinai.tech" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image"><img src='hacker.png'></div>
+        <h3>Embedding Poisoning Backdoor Attack</h3>
+        <p>Trained a model with a backdoor trigger using embedding poisoning attack.
+        Developed the pipeline from data preparation to evaluation
+        Successfully developed a model with high attack success rate and negligible effect on clean accuracy.
+        </p>
+        <!-- <div class="project-links"> -->
+          <!-- <a href="https://github.com/yourusername/project2" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a> -->
+          <!-- <a href="#" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <div class="contact-content">
+      <div class="contact-info">
+        <a href="mailto:saianoop9@gmail.com" class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>saianoop9@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/sai-anoop" target="_blank" class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/ExtraneousFalcon" target="_blank" class="contact-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sai Anoop Avunuri. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
